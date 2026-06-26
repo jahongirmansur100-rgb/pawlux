@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PawLux — Premium Animal Shop. Find your perfect companion from our curated collection of pets, accessories, and premium pet care products.">
+  <title>PawLux — Premium Animal Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Background Orbs -->
+  <div class="bg-orb bg-orb--1"></div>
+  <div class="bg-orb bg-orb--2"></div>
+  <div class="bg-orb bg-orb--3"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <div class="logo-icon">🐾</div>
+        Paw<span>Lux</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="nav-cart" id="cartBtn">
+          🛒
+          <span class="badge" id="cartBadge">3</span>
+        </div>
+        <button class="btn-primary" id="adoptBtn">Adopt Now</button>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          New Arrivals Every Week
+        </div>
+        <h1>Find Your<br>Perfect <span class="highlight">Companion</span></h1>
+        <p class="hero-description">
+          Discover our curated collection of adorable pets and premium accessories. 
+          Every animal deserves a loving home, and every home deserves a loyal friend.
+        </p>
+        <div class="hero-cta">
+          <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+            Explore Pets →
+          </button>
+          <button class="btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            Learn More
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="number">2<span>K+</span></div>
+            <div class="label">Happy Customers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number">500<span>+</span></div>
+            <div class="label">Pets Available</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number">4.9<span>★</span></div>
+            <div class="label">Customer Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="images/hero.jpg" alt="Happy pets at PawLux" loading="eager">
+        </div>
+        <div class="float-card">
+          <div class="icon green">✓</div>
+          <div class="info">
+            <div class="value">Vet Verified</div>
+            <div class="desc">All pets health-checked</div>
+          </div>
+        </div>
+        <div class="float-card">
+          <div class="icon amber">🏆</div>
+          <div class="info">
+            <div class="value">#1 Pet Shop</div>
+            <div class="desc">Rated best in city</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES SECTION ===== -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories-header reveal">
+        <span class="section-label">Categories</span>
+        <h2 class="section-title">Browse by Animal</h2>
+        <p class="section-subtitle">Explore our wide selection of adorable pets, each one waiting for a loving home.</p>
+      </div>
+
+      <div class="categories-grid">
+        <div class="category-card reveal" style="transition-delay: 0.1s">
+          <div class="category-card-image">
+            <img src="images/dog.jpg" alt="Dogs Category">
+          </div>
+          <span class="category-card-count">120+ Breeds</span>
+          <div class="category-card-content">
+            <h3>Dogs</h3>
+            <p>Loyal & playful companions</p>
+          </div>
+        </div>
+
+        <div class="category-card reveal" style="transition-delay: 0.2s">
+          <div class="category-card-image">
+            <img src="images/cat.jpg" alt="Cats Category">
+          </div>
+          <span class="category-card-count">85+ Breeds</span>
+          <div class="category-card-content">
+            <h3>Cats</h3>
+            <p>Elegant & independent spirits</p>
+          </div>
+        </div>
+
+        <div class="category-card reveal" style="transition-delay: 0.3s">
+          <div class="category-card-image">
+            <img src="images/bird.jpg" alt="Birds Category">
+          </div>
+          <span class="category-card-count">60+ Species</span>
+          <div class="category-card-content">
+            <h3>Birds</h3>
+            <p>Colorful & melodic friends</p>
+          </div>
+        </div>
+
+        <div class="category-card reveal" style="transition-delay: 0.4s">
+          <div class="category-card-image">
+            <img src="images/fish.jpg" alt="Fish Category">
+          </div>
+          <span class="category-card-count">200+ Species</span>
+          <div class="category-card-content">
+            <h3>Fish</h3>
+            <p>Mesmerizing aquatic beauty</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products-header reveal">
+        <div>
+          <span class="section-label">Our Collection</span>
+          <h2 class="section-title">Featured Pets</h2>
+          <p class="section-subtitle">Hand-picked companions ready for their forever home.</p>
+        </div>
+        <div class="products-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="dogs">Dogs</button>
+          <button class="filter-btn" data-filter="cats">Cats</button>
+          <button class="filter-btn" data-filter="birds">Birds</button>
+          <button class="filter-btn" data-filter="others">Others</button>
+        </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Product 1 -->
+        <div class="product-card reveal" data-category="dogs" style="transition-delay: 0.1s">
+          <div class="product-card-image">
+            <img src="images/dog.jpg" alt="Golden Retriever Puppy">
+            <span class="product-badge popular">Popular</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Dogs</span>
+            <h3>Golden Retriever Puppy</h3>
+            <p class="product-desc">Friendly, intelligent, and devoted. Perfect family companion. 3 months old.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$850</span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal" data-category="cats" style="transition-delay: 0.2s">
+          <div class="product-card-image">
+            <img src="images/cat.jpg" alt="Persian Cat">
+            <span class="product-badge new">New</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Cats</span>
+            <h3>Persian Kitten</h3>
+            <p class="product-desc">Luxurious long fur and calm temperament. Blue-eyed beauty. 2 months old.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$650</span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal" data-category="birds" style="transition-delay: 0.3s">
+          <div class="product-card-image">
+            <img src="images/bird.jpg" alt="Exotic Parrot">
+            <span class="product-badge sale">-20%</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Birds</span>
+            <h3>Exotic Macaw Parrot</h3>
+            <p class="product-desc">Vibrant plumage and exceptional talking ability. Hand-raised, very social.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$1,200 <span class="old">$1,500</span></span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card reveal" data-category="others" style="transition-delay: 0.1s">
+          <div class="product-card-image">
+            <img src="images/rabbit.jpg" alt="White Rabbit">
+            <span class="product-badge new">New</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Rabbits</span>
+            <h3>Holland Lop Bunny</h3>
+            <p class="product-desc">Adorable floppy ears and gentle nature. Perfect for families with children.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$120</span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card reveal" data-category="others" style="transition-delay: 0.2s">
+          <div class="product-card-image">
+            <img src="images/fish.jpg" alt="Betta Fish">
+            <span class="product-badge popular">Popular</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Fish</span>
+            <h3>Royal Betta Fish</h3>
+            <p class="product-desc">Stunning iridescent fins and vibrant colors. Low maintenance, high beauty.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$45</span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card reveal" data-category="dogs" style="transition-delay: 0.3s">
+          <div class="product-card-image">
+            <img src="images/hero.jpg" alt="Husky Puppy">
+            <span class="product-badge sale">-15%</span>
+            <div class="product-wishlist" onclick="this.classList.toggle('liked')">♡</div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category">Dogs</span>
+            <h3>Siberian Husky Pup</h3>
+            <p class="product-desc">Energetic, adventurous, and strikingly beautiful with blue eyes.</p>
+            <div class="product-card-footer">
+              <span class="product-price">$950 <span class="old">$1,100</span></span>
+              <button class="btn-add-cart" title="Add to cart">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES / ABOUT SECTION ===== -->
+  <section class="features" id="about">
+    <div class="container">
+      <div class="features-content reveal">
+        <span class="section-label">Why Choose Us</span>
+        <h2 class="section-title">We Care About<br>Every Paw & Fin</h2>
+        <p class="section-subtitle">At PawLux, we believe every pet deserves the finest care and every owner deserves complete peace of mind.</p>
+
+        <div class="features-list">
+          <div class="feature-item">
+            <div class="feature-icon amber">🏥</div>
+            <div class="feature-text">
+              <h4>Veterinary Certified</h4>
+              <p>Every pet goes through thorough health checks by certified veterinarians before joining our family.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon green">🚚</div>
+            <div class="feature-text">
+              <h4>Safe Home Delivery</h4>
+              <p>Climate-controlled, stress-free transportation right to your doorstep with a comfort guarantee.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon purple">💬</div>
+            <div class="feature-text">
+              <h4>Lifetime Support</h4>
+              <p>Get expert advice on nutrition, training, and health care — for free, for the lifetime of your pet.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon pink">🛡️</div>
+            <div class="feature-text">
+              <h4>Health Guarantee</h4>
+              <p>30-day health guarantee on all pets with full vaccination records and microchip included.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-visual reveal">
+        <div class="features-image-grid">
+          <div class="img-wrapper">
+            <img src="images/dog.jpg" alt="Happy dog">
+          </div>
+          <div class="img-wrapper">
+            <img src="images/cat.jpg" alt="Beautiful cat">
+          </div>
+          <div class="img-wrapper">
+            <img src="images/bird.jpg" alt="Colorful bird">
+          </div>
+          <div class="img-wrapper">
+            <img src="images/rabbit.jpg" alt="Cute rabbit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header reveal">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Real stories from happy pet parents who found their perfect companion with us.</p>
+      </div>
+    </div>
+
+    <div class="testimonials-track" id="testimonialTrack">
+      <!-- Cards will be duplicated by JS for infinite scroll -->
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"PawLux made finding our golden retriever so easy. Max is healthy, playful, and already part of the family. The vet reports were thorough and the support team is amazing!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AS</div>
+          <div class="testimonial-info">
+            <div class="name">Alisher Sadikov</div>
+            <div class="role">Dog Parent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"I was hesitant about buying a pet online, but PawLux exceeded all expectations. My Persian kitten Luna arrived healthy, happy, and already litter-trained. Incredible service!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MK</div>
+          <div class="testimonial-info">
+            <div class="name">Maria Kim</div>
+            <div class="role">Cat Parent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"The macaw parrot I got from PawLux is absolutely stunning. The team provided extensive care guides and even follows up monthly. Best pet shop experience I've ever had!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">DR</div>
+          <div class="testimonial-info">
+            <div class="name">David Rodriguez</div>
+            <div class="role">Bird Enthusiast</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"From the moment I walked in, I knew PawLux was different. The staff genuinely cares about matching pets with the right families. Our bunny Snowball is the joy of our home!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">NK</div>
+          <div class="testimonial-info">
+            <div class="name">Nodira Karimova</div>
+            <div class="role">Rabbit Parent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"Premium quality, premium service. I set up an entire aquarium with PawLux's help. Their fish are healthy, vibrant, and the team even helped with tank setup. 10/10!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JT</div>
+          <div class="testimonial-info">
+            <div class="name">James Thompson</div>
+            <div class="role">Aquarium Hobbyist</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p class="testimonial-text">"We adopted two kittens and couldn't be happier. PawLux provided all vaccination records, a starter kit, and even a video call with the vet. True professionals!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SL</div>
+          <div class="testimonial-info">
+            <div class="name">Sarah Lee</div>
+            <div class="role">Cat Mom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / NEWSLETTER SECTION ===== -->
+  <section class="cta-section" id="contact">
+    <div class="container">
+      <div class="cta-box reveal">
+        <span class="section-label">Stay Connected</span>
+        <h2>Join Our Pet<br>Lovers Community</h2>
+        <p>Subscribe for exclusive deals, new arrivals, pet care tips, and adoption events. Be the first to know!</p>
+        <form class="cta-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email..." required>
+          <button type="submit" class="btn-primary">Subscribe →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">🐾</div>
+            Paw<span>Lux</span>
+          </a>
+          <p>Premium animal shop dedicated to connecting loving families with their perfect companion. Every pet deserves happiness.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer-social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer-social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Pet Categories</h4>
+          <ul>
+            <li><a href="#categories">Dogs</a></li>
+            <li><a href="#categories">Cats</a></li>
+            <li><a href="#categories">Birds</a></li>
+            <li><a href="#categories">Fish</a></li>
+            <li><a href="#categories">Rabbits</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">Pet Care Guides</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 PawLux. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
